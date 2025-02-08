@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7e7f1;
+      color: #d48a7d;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 50px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff6f91;
+      background-color: #ffb3d9;
+      border-bottom: 3px solid #ff6f91;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .heart {
+      font-size: 80px;
+      color: #ff6f91;
+      animation: heartbeat 1.5s infinite alternate;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .message {
+      font-size: 1.5em;
+      margin: 20px;
+    }
+
+    .button {
+      background-color: #ff6f91;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff4d7d;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb3d9;
+      border-top: 3px solid #ff6f91;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    💖 Will You Be My Valentine? 💖
+  </div>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+    <p class="message">I think you're absolutely purrfect for me. <br> You make my heart skip a beat (and sometimes it's awkward, but still ❤️).</p>
+    <button class="button" onclick="revealMessage()">Click to Find Out!</button>
+    <p id="valentineMessage" style="display:none; color: #d48a7d; font-size: 1.2em; margin-top: 20px;">YAY! You just made my Valentine's Day. ❤️ You’re the best!</p>
+  </div>
+
+  <div class="footer">
+    Made with ❤️ and a sprinkle of cheesy charm.
+  </div>
+
+  <script>
+    function revealMessage() {
+      const message = document.getElementById('valentineMessage');
+      message.style.display = 'block';
+    }
+  </script>
+  
+</body>
+</html>
